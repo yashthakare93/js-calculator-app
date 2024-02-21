@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator-JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="default-body"> 
+    <div class="container">
+
+        <div class="calculator">
+            <button class="toggle-color" onclick="toggleColorMode()" ></button>
+            
+            <form>
+                <div class="display-box">
+                    <input type="text"  name="display-box" id="result" disabled />
+                </div>
+                
+                <div class="displayfirstrow">
+                    <input type="button" value="AC" onclick="clearScreen()">
+                    <input type="button" value="DE" onclick="slice()">
+                    <input type="button" value="." onclick="addToDisplay('.')">
+                    <input type="button" value="/" onclick="addToDisplay('/')">
+                </div>
+
+                <div class="displaysecondrow">
+                    <input type="button" value="7" onclick="addToDisplay('7')">
+                    <input type="button" value="8" onclick="addToDisplay('8')">
+                    <input type="button" value="9" onclick="addToDisplay('9')">
+                    <input type="button" value="*" onclick="addToDisplay('*')">
+                </div>
+
+                <div class="displaythirdrow">
+                    <input type="button" value="3" onclick="addToDisplay('3')">
+                    <input type="button" value="4" onclick="addToDisplay('4')">
+                    <input type="button" value="5" onclick="addToDisplay('5')">
+                    <input type="button" value="-" onclick="addToDisplay('-')">
+                </div>
+
+                <div class="displayforthrow">
+                    <input type="button" value="1" onclick="addToDisplay('1')">
+                    <input type="button" value="2" onclick="addToDisplay('2')">
+                    <input type="button" value="3" onclick="addToDisplay('3')">
+                    <input type="button" value="+" onclick="addToDisplay('+')">
+                </div>
+
+                <div class="displaylastrow">
+                    <input type="button" value="00" onclick="addToDisplay('00')">
+                    <input type="button" value="0" onclick="addToDisplay('0')">
+                    <input type="button" class="equal" value="=" onclick="calculate()">
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
